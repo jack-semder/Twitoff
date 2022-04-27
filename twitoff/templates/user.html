@@ -1,4 +1,4 @@
-% extends "base.html" %
+{% extends "base.html" %}
 
 {% block content %}
 <div id="user-info">
@@ -6,7 +6,7 @@
     <p>{{ message }}</p>
 </div>
 
-<div id="user tweets">
+<div id="user-tweets">
     {% for tweet in tweets %}
     <span class="stack">
         {{ tweet.text }}

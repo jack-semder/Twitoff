@@ -89,7 +89,7 @@ def create_app():
             message = 'Cannot compare a user to themselves'
         else:
             prediction = predict_user(user0, user1, hypo_tweet)
-            predicted_user = user0 if prediction == 0.0 else user1
+            predicted_user = [user0 if prediction == 0.0 else user1]
             message = f'"{hypo_tweet}" is more likely said by {predicted_user}'
 
         return render_template(
