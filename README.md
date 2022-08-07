@@ -1,4 +1,4 @@
-## To start dev server:
+## Run Directions:
 
 ```
 pipenv shell
